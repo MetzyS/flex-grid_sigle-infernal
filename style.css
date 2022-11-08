@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  max-width: 600px;
+  height: auto;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 100px 150px 100px 100px;
+  grid-template-areas:
+    "top top top top top top right"
+    "left inside_top inside_top inside_top inside_top inside_right right"
+    "left inside_left inner inner inner inside_right right"
+    "left inside_left inside_bottom inside_bottom inside_bottom inside_bottom right"
+    "left bottom bottom bottom bottom bottom bottom";
+  gap: 15px;
+}
+
+.outter_style {
+  background-color: #d5e8d4;
+  box-sizing: border-box;
+  border: 1px solid #89b76f;
+}
+
+.inner_style {
+  background-color: #dae8fc;
+  box-sizing: border-box;
+  border: 1px solid #7293c2;
+}
+
+.inner {
+  background-color: #ffe6cc;
+  box-sizing: border-box;
+  border: 1px solid #d89c03;
+}
+
+#top_rectangle {
+  grid-area: top;
+}
+#left_rectangle {
+  grid-area: left;
+}
+#bottom_rectangle {
+  grid-area: bottom;
+}
+#right_rectangle {
+  grid-area: right;
+}
+#top_inside_rectangle {
+  grid-area: inside_top;
+}
+#left_inside_rectangle {
+  grid-area: inside_left;
+}
+#bottom_inside_rectangle {
+  grid-area: inside_bottom;
+}
+#right_inside_rectangle {
+  grid-area: inside_right;
+}
+#inner_rectangle {
+  grid-area: inner;
+}
